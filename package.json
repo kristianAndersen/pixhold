@@ -1,0 +1,26 @@
+{
+  "name": "pixhold",
+  "version": "1.0.0",
+  "description": "An image placeholder service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristianAndersen/pixhold.git"
+  },
+  "keywords": [
+    "nodejs",
+    "fabricjs"
+  ],
+  "author": "krilleandersen@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristianAndersen/pixhold/issues"
+  },
+  "homepage": "https://github.com/kristianAndersen/pixhold#readme",
+  "dependencies": {
+    "fabric": "^4.2.0"
+  }
+}
