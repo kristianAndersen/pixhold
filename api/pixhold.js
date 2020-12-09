@@ -1,5 +1,4 @@
 const  fabric = require('fabric').fabric;
-
 let fcanvas = new fabric.StaticCanvas(null, {width:200,height:200});
 
 
@@ -7,9 +6,12 @@ let fcanvas = new fabric.StaticCanvas(null, {width:200,height:200});
 
 module.exports = async (req, res) => {
 
-    const { name = 'World' } = req.query
-    res.status(200).send(`Hello ${name}!`)
+    const {
+        query: { name },
+      } = req
     
+      res.send(`Hello ${name}!`)
+
   /*  
 
     var placeholder = new fabric.Rect({
