@@ -7,7 +7,10 @@ let fcanvas = new fabric.StaticCanvas(null, {width:200,height:200});
 
 module.exports = async (req, res) => {
 
+    const { name = 'World' } = req.query
+    res.status(200).send(`Hello ${name}!`)
     
+  /*  
 
     var placeholder = new fabric.Rect({
         name:placeholder,
@@ -28,5 +31,5 @@ module.exports = async (req, res) => {
    
     
    res.send(`Hello ${req.body}, you just parsed the request body!`)
-
+*/
 };
