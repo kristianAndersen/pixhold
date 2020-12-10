@@ -33,7 +33,7 @@ const encoded = encodeURIComponent(cleaned)
 let cleansvg=`data:image/svg+xml;charset=UTF-8,${encoded}`;
 
   
-res.status(200).send(cleansvg)
+res.status(200, {'content-type':'text/html'}).send(cleansvg)
 
 
 };
