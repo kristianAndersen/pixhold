@@ -1,5 +1,5 @@
 
-// /api/hello?ph=250,340,333333,wasup
+// /api/hello?ph=250,340,333333
 
 export default (req, res) => {
 
@@ -32,8 +32,8 @@ const encoded = encodeURIComponent(cleaned)
 
 let cleansvg=`data:image/svg+xml;charset=UTF-8,${encoded}`;
 
-  
-res.status(200, {'content-type':'text/html'}).send(cleansvg)
+res.setHeader('Content-Type', 'image/svg+xml');  
+res.status(200).send(cleansvg)
 
 
 };
