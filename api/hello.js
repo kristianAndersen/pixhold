@@ -16,7 +16,7 @@ export default (req, res) => {
 
 let svg=`<svg xmlns='http://www.w3.org/2000/svg' width='${width}' height='${height}' viewBox='0 0 ${width} ${height}'>
 <rect fill='#${color}' width='${width}' height='${height}'/>
-<text fill='rgba(0,0,0,0.5)' font-family='sans-serif' font-size='10' dy='10.5' font-weight='bold' x='50%' y='50%' text-anchor='middle'>${text}
+<text fill='rgba(0,0,0,0.5)' font-family='sans-serif' font-size='10' dy='10.5' font-weight='bold' x='50%' y='50%' text-anchor='middle'>https://pixhold.vercel.app/
 </text>
 </svg>`
 
